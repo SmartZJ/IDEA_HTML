@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+</head>
+<body>
+
+<div>
+    <form action="" method="post">
+        <ul style="list-style: none">
+            <!--用户名-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 用 户 名: <input type="text" placeholder="用户名设置成功后不可修改">&nbsp;&nbsp;<small style="color: #ff7117">6-30位字母、数字或“_”,字母开头</small>
+                </div>
+            </li>
+            <!--登录密码-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 登录密码: <input type="password" placeholder="6-20位字母、数字或符号" >
+                </div>
+            </li>
+            <!--确认密码-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 确认密码: <input type="password" placeholder="再次输入您的登录密码" >
+                </div>
+            </li>
+            <!--证件类型-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 证件类型:<select>
+                    <option>中国居民身份证</option>
+                    <option selected>港澳居民来往内地通行证</option>
+                    <option>台湾居民来往大陆通行证</option>
+                    <option>护照</option>
+                </select>&nbsp;&nbsp;<small><u style="color: #ff7117">证件填写规则</u></small>
+                </div>
+            </li>
+            <!--姓名-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 姓 名:  <input type="text" placeholder="请输入证件上的中文姓名">&nbsp;&nbsp;<small style="color: #ff7117"><u >姓名填写规则</u>(用于身份证核验，请正确填写)</small>
+                </div>
+            </li>
+            <!--证件号码-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 证件号码: <input type="text" placeholder="请输入您的证件号码">&nbsp;&nbsp;<small style="color: #ff7117">(用于身份证核验，请正确填写)</small>
+                </div>
+            </li>
+            <!--证件有效截止日期-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 证件有效截止日期: <input type="date" >&nbsp;&nbsp;<small style="color: #ff7117">(用于身份证核验，请正确填写)</small>
+                </div>
+            </li>
+            <!--出生日期-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 出生日期:<input type="date" >&nbsp;&nbsp;<small style="color: #ff7117">(用于身份证核验，请正确填写)</small>
+                </div>
+            </li>
+            <!--性别-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 性别:<input type="radio" name="sex" >男 <input type="radio" name="sex" >女
+                </div>
+            </li>
+            <!--邮箱-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 邮箱:<input type="email" placeholder="请正确填写邮箱地址">
+                </div>
+            </li>
+            <!--手机号码-->
+            <li>
+                <div>
+                    手机号码(+86):<input type="number" placeholder="请输入您的手机号">&nbsp;&nbsp;<small style="color: #ff7117">请正确填写手机号码，稍后将向该手机号码发送短信验证码</small>
+                </div>
+            </li>
+            <!--旅客类型-->
+            <li>
+                <div>
+                    <span style="color: red">*</span> 旅客类型:<select>
+                    <option selected>成人</option>
+                    <option >儿童</option>
+                    <option>学生</option>
+                    <option>残疾军人、伤残人民警察</option>
+                </select>
+                </div>
+            </li>
+            <!--同意遵守复选框-->
+            <li>
+                <div>
+                    <input type="checkbox" ><small>我已阅读并同意遵守</small><small style="color: blue">《中国铁路客服服务中心网站服务条款》《隐私权政策》</small>
+                </div>
+            </li>
+            <!--提交按钮-->
+            <li>
+                <div>
+                    <input type="submit" style="background-color: orange;color: aliceblue"  value="下一步">
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>
+</body>
+
+</html>

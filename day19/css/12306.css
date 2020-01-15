@@ -1,0 +1,107 @@
+
+#main{
+    width: 1000px;
+    border: 1px solid #3364c8;
+    border-radius: 5px 5px 0 0;
+    collapse: 0px;
+    padding: 0px;
+    margin: auto;
+}
+
+#main>div:nth-child(2){
+    background-color: #174ac8;
+    /*border: #0077ff solid 1px;*/
+    height: 0px;
+}
+
+#top{
+    height: 20px;
+    background: #0077ff;
+    border-radius: 5px 5px 0 0;
+    margin: 0px;
+    display: flex;
+    align-item: center;
+}
+#top>span{
+    margin-left: 10px;
+    color: white;
+    font-size: 13px;
+    font-family: Tahoma,"宋体";
+}
+
+#form{
+    margin: 0;
+    padding: 0;
+}
+form{
+    border: 1px;
+}
+ul{
+    list-style: none;
+}
+ul li:last-child div {
+    text-align: center;
+}
+ul li:nth-child(2) span:first-child:not(.star){
+    background-color: #ff000f;
+}
+.star{
+    color: red;
+}
+label{
+    display: inline-block;
+    width:350px;
+    text-align: right;
+}
+
+.passwordcolor{
+    height: 7px;
+    width: 50px;
+    background-color: #a1a1a1;
+    display: inline-block;
+}
+
+input:not(.check){
+    width: 200px;
+    height: 25px;
+}
+select{
+    width: 204px;
+    height: 30px;
+}
+
+.tip{
+    padding-left: 10px;
+    color: #ff7117;
+}
+
+a:not([class=rule]){
+    text-decoration: none;
+    color: #07f;
+}
+div{
+    font-family: Tahoma,"宋体";
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+
+.rule{
+    color: #ff7117;
+}
+
+
+[type = submit]{
+     text-align: center;
+     margin-top: 10px ;
+     margin-bottom: 10px;
+     width: 100px;
+     height: 25px;
+     border-radius: 5px 5px 5px 5px;
+     border: 0px;
+     background-color: orange;
+     color: white;
+ }
+[type = submit]:hover{
+    background-color: rgba(255, 166, 0, 0.69);
+}

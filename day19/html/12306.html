@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+<!--    引入css文件-->
+    <link rel="stylesheet" type="text/css" href="../css/12306.css">
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <span>账户信息</span>
+        </div>
+        <div></div>
+        <div id="form" >
+            <form action="" method="post">
+                <ul >
+                    <!--用户名-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 用 户 名: </label>
+                            <input type="text" placeholder="用户名设置成功后不可修改">
+                            <span class="tip">6-30位字母、数字或“_”,字母开头</span>
+                        </div>
+                    </li>
+                    <!--登录密码-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 登录密码: </label>
+                            <input type="password" placeholder="6-20位字母、数字或符号" >
+                            <span class="tip">
+                                <span class="passwordcolor"></span>
+                                <span class="passwordcolor"></span>
+                                <span class="passwordcolor"></span>
+                            </span>
+                        </div>
+                    </li>
+                    <!--确认密码-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 确认密码: </label>
+                            <input type="password" placeholder="再次输入您的登录密码" >
+                        </div>
+                    </li>
+                    <!--证件类型-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 证件类型:</label>
+                            <select>
+                            <option>中国居民身份证</option>
+                            <option selected>港澳居民来往内地通行证</option>
+                            <option>台湾居民来往大陆通行证</option>
+                            <option>护照</option>
+                        </select>&nbsp;&nbsp;<span class="tip"><a class="rule" href="">证件填写规则</a></span>
+                        </div>
+                    </li>
+                    <!--姓名-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 姓 名:</label>
+                            <input type="text" placeholder="请输入证件上的中文姓名">
+                            <span class="tip"><a class="rule" href="">姓名填写规则</a>(用于身份证核验，请正确填写)</span>
+                        </div>
+                    </li>
+                    <!--证件号码-->
+                    <li>
+                        <div>
+                            <label> <span class = "star" >*</span>证件号码:</label>
+                            <input type="text" placeholder="请输入您的证件号码">
+                            <span class="tip">(用于身份证核验，请正确填写)</span>
+                        </div>
+                    </li>
+                    <!--证件有效截止日期-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 证件有效截止日期:</label>
+                            <input type="date" >
+                            <span class="tip">(用于身份证核验，请正确填写)</span>
+                        </div>
+                    </li>
+                    <!--出生日期-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 出生日期:</label>
+                            <input type="date" >
+                            <span class="tip" >(用于身份证核验，请正确填写)</span>
+                        </div>
+                    </li>
+                    <!--性别-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 性别:</label>
+                            <input type="radio" name="sex" class="check">男 <input type="radio" name="sex" class="check">女
+                        </div>
+                    </li>
+                    <!--邮箱-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 邮箱:</label>
+                            <input type="email" placeholder="请正确填写邮箱地址">
+                        </div>
+                    </li>
+                    <!--手机号码-->
+                    <li>
+                        <div>
+                            <label>手机号码(+86):</label>
+                            <input type="number" placeholder="请输入您的手机号">&nbsp;&nbsp;
+                            <span class="tip">请正确填写手机号码，稍后将向该手机号码发送短信验证码</span>
+                        </div>
+                    </li>
+                    <!--旅客类型-->
+                    <li>
+                        <div>
+                            <label><span class = "star" >*</span> 旅客类型:</label>
+                            <select>
+                            <option selected>成人</option>
+                            <option >儿童</option>
+                            <option>学生</option>
+                            <option>残疾军人、伤残人民警察</option>
+                            </select>
+                        </div>
+                    </li>
+                    <!--同意遵守复选框-->
+                    <li>
+                        <div>
+                            <label></label>
+                            <input type="checkbox" class="check">
+                            <span>我已阅读并同意遵守</span>
+                            <span>
+                                <a href="">《中国铁路客服服务中心网站服务条款》</a>
+                                <a href="">《隐私权政策》</a>
+                            </span>
+                        </div>
+                    </li>
+                    <!--提交按钮-->
+                    <li>
+                        <div>
+                            <input class="check" type="submit"   value="下一步" >
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

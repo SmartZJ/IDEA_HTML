@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水仙花和回文数</title>
+    <script>
+        //水仙花数
+        function fNumber() {
+            var sum = 0;
+            var num = Number(document.getElementById("inp").value);
+            if (isNaN(num)){
+                alert("请输入数字");
+            }else {
+                let str = num.toString();
+                for(var i=0;i<str.length;i++){
+                    sum+=Math.pow(str[i],str.length);
+                    console.log(sum);
+                }
+                if (sum==num){
+                    alert(num+"是水仙花数");
+                }else {
+                    alert(num+"不是水仙花数");
+                }
+            }
+        }
+        //回文数
+        function hNumber() {
+            var num = Number(document.getElementById("inp").value);
+            let str = num.toString();
+            if (isNaN(num)){
+                alert("请输入数字");
+            }else {
+                let nstr = str.split("");
+                // console.log("nstr:"+nstr);
+                let nnum = nstr.reverse().join("");
+                // console.log("nnum:"+nnum);
+                if (nnum==num){
+                    alert(num+"是回文数");
+                }else {
+                    alert(num+"不是回文数");
+                }
+            }
+        }
+        //九九乘法
+        function pMTable() {
+            for (let i = 1; i <10 ; i++) {
+                for (let j = 1;j <= i;j++){
+                    document.write();
+                    document.write(j+'×'+i+'='+i*j+'&nbsp;&nbsp;&nbsp;&nbsp;');
+                }
+                document.write('<br>');
+            }
+        }
+        //九九乘法表格版
+        function pMTable2() {
+            document.write("<table border='1' frame='void'>" );
+            for (let i = 1; i <10 ; i++) {
+                document.write('<tr>');
+                for (let j = 1;j <= i;j++){
+                    document.write('<td>'+j+'×'+i+'='+i*j+'</td>');
+                }
+                document.write('</tr>');
+            }
+        }
+
+        function score() {
+            var arr = new Array();
+            var score;
+            var count = 1;
+            var sum = 0,ascore = 0;
+            let narr = new Array();
+            while (count<9){
+                score = parseInt(prompt("请"+count+"号评委评分"));
+                if (isNaN(score)||score<0||score>10||score.toString().indexOf(".")!=-1){
+                    alert("评分不符合规则请重新输入")
+                }else {
+                    arr.push(score);
+                    narr.push(score);
+                    console.log(count+"号评委:"+"\t"+score);
+                    count++;
+                }
+            }
+
+            // console.log(arr);
+            for(let i of arr){
+                sum+=i;
+            }
+            ascore = (sum-arr.sort(function (a,b) {return a-b}).shift()-arr.sort(function (a,b) {return a-b}).pop())/(count-2);
+            console.log("总分："+sum+"去掉最高分最低分后的平均分："+ascore);
+
+            //打印测试
+            narr.push(ascore);
+            document.write("<table border='1'>");
+            document.write('<tr>');
+            for(let i=1;i<10;i++){
+                if (i<=8){
+                    document.write('<td>'+i+'号评委</td>');
+                }else {
+                    document.write('<td>平均分</td>');
+                }
+            }
+            document.write('</tr>');
+            document.write('<tr>');
+            for(let i=0;i<narr.length;i++){
+                document.write('<td>'+narr[i]+'</td>');
+            }
+            document.write('</tr>');
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="inp">
+        <input type="button" onclick="fNumber()" value="水仙花数判断">
+        <input type="button" onclick="hNumber()" value="回文数判断">
+    </div>
+    <div>
+        <input type="button" onclick="pMTable()" value="九九乘法表">
+    </div>
+    <div>
+        <input type="button" onclick="pMTable2()" value="九九乘法表（表格）">
+    </div>
+    <div>
+        <input type="button" onclick="score()" value="评分">
+    </div>
+
+
+</body>
+</html>

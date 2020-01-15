@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加表</title>
+    <link rel="stylesheet" href="../css/AddTable.css">
+
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <td colspan="2">
+                <input type="button" value="添加" id="addb">
+            </td>
+            <td colspan="2">
+                <input type="button" value="删除" id="delb">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="allcheck" type="checkbox" >全选
+            </td>
+            <td>
+                name
+            </td>
+            <td>
+                age
+            </td>
+            <td>
+                adress
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="checkbox" onclick="changeType(this)" >
+            </td>
+            <td>
+                Tom
+            </td>
+            <td>
+               20
+            </td>
+            <td>
+                china
+            </td>
+        </tr>
+    </table>
+</body>
+<script src="../js/AddTable.js"></script>
+</html>

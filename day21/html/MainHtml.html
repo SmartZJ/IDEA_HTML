@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <script>
+        var time;
+        function op() {
+            let count=0;
+            let son;
+            son = open("SonHtml.html");
+            time = setTimeout(function clo(){
+                son.close()
+            },10000);
+        }
+        function clearT() {
+            clearTimeout(time);
+        }
+
+        function rmain() {
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+<button onclick="op()">开始游戏</button>
+</body>
+</html>

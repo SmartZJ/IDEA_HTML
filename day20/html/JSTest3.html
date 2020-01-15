@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评分</title>
+    <script>
+        function score() {
+            var arr = new Array();
+            var score;
+            var count = 1;
+            var sum = 0,ascore = 0;
+            while (count<9){
+                    score = parseInt(prompt("请"+count+"号评委评分"));
+                if (isNaN(score)||score<0||score>10||score.toString().indexOf(".")!=-1){
+                    alert("评分不符合规则请重新输入")
+                }else {
+                    arr.push(score);
+                    console.log(count+"号评委:"+"\t"+score);
+                    count++;
+                }
+            }
+            // console.log(arr);
+           for(var i of arr){
+               sum+=i;
+           }
+           ascore = (sum-arr.sort(function (a,b) {return a-b}).shift()-arr.sort(function (a,b) {return a-b}).pop())/(count-2);
+           console.log("总分："+sum+"去掉最高分最低分后的平均分："+ascore);
+        }
+
+
+        function practice() {
+            /*
+           concat()    连接两个或更多的数组，并返回结果。
+           join()      把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。
+           pop()       删除并返回数组的最后一个元素
+           splice()    删除元素，并向数组添加新元素。
+           push()      向数组的末尾添加一个或更多元素，并返回新的长度。
+           shift()     删除并返回数组的第一个元素
+           unshift()   向数组的开头添加一个或更多元素，并返回新的长度。
+           slice()     从某个已有的数组返回选定的元素
+           sort()      对数组的元素进行排序
+           reverse()   颠倒数组中元素的顺序。
+           toString()  把数组转换为字符串，并返回结果。
+            */
+            var arr = new Array();
+            var arr2 = new Array(5);
+            var arr3 = new Array(1,10,101,1001);
+            var arr4 = [5,6,8,"sxt",9,"azx","asd"];
+
+            // console.log(arr3.concat(arr4));
+            // console.log(arr3.join("|"));
+
+            // console.log(arr4);
+            // console.log(arr4.pop());
+            // console.log(arr4);
+
+            // console.log(arr4);
+            // console.log(arr4.splice(0,2,"45",45,78,79));
+            // console.log(arr4);
+
+            // console.log(arr4);
+            // console.log(arr4.push(5,6,78));
+            // console.log(arr4);
+
+            // console.log(arr4);
+            // console.log(arr4.slice(1,5));
+            // console.log(arr4);
+
+            console.log(arr3.sort());
+            console.log(arr3.reverse());
+
+
+        }
+        score();
+        // practice();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

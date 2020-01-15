@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动表格</title>
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table width="100%" border="1px">
+            <tr>
+                <td>可加入预算维度的预算科目</td>
+                <td></td>
+                <td>已加入预算维度的预算科目</td>
+            </tr>
+            <tr height="100px">
+                <td valign="top">
+                    <table border="1px" width="100%" id="table1">
+                        <tr>
+                            <td>
+                                <input type="checkbox" onclick="check(id)" id="lcheck"/>
+                            </td>
+                            <td>
+                                预算科目名称(科目编码)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例5
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例6
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>
+                                样例7
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div>
+                        <button id="add" onclick="add()">添加</button>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <button id="remove" onclick="move()">移除</button>
+                    </div>
+                </td>
+                <td valign="top">
+                    <table border="1px" width="100%" id="table2">
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="rcheck" onclick="check(id)"/>
+                            </td>
+                            <td>预算科目名称</td>
+                            <td>预算科目编码</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>样例0</td>
+                            <td>样例0编码</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox"/>
+                            </td>
+                            <td>样例1</td>
+                            <td>样例1编码</td>
+                        </tr>
+                    </table>
+        </table>
+        </td>
+        </tr>
+        </table>
+    </div>
+</body>
+</html>

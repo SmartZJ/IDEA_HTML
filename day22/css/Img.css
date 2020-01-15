@@ -1,0 +1,43 @@
+/* 设置banner样式 */
+.banner {
+    width:520px;
+    height:280px;
+    margin:0 auto;
+}
+/* 设置img的position属性 */
+img{
+    position: absolute;
+}
+
+/* 设置ul */
+ul{
+    list-style:none; /* 将默认的列表符号去掉*/
+    border-radius: 10px;
+    position: absolute;
+    top: 260px;
+    height: 13px;
+    font-size: 0;
+    left: 50%;
+    z-index: 99;
+    padding: 0px;
+    margin-left: -39px;
+    background-color: rgba(255,255,255,.3);
+}
+/* 设置li */
+li{
+    display: inline-block;
+    margin: 3px;
+}
+/* 设置a标签 */
+a{
+    display: block;
+    padding-top: 8px;
+    width: 8px;
+    height: 0;
+    border-radius: 50%;
+    background: #fff;
+}
+/* 设置第一个a标签 */
+li:first-child > a{
+    background-color: #ff5000;
+}

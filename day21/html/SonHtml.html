@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>son</title>
+    <script>
+        function play() {
+            let num1;
+            let num2;
+            let str;
+            let num;
+            num1 = parseInt(Math.random()*1000+1);
+            num2 = parseInt(Math.random()*1000+1);
+            if (parseInt(Math.random()*2)>0){
+                str="+"
+            }else {
+                str="-"
+            }
+            num = prompt(num1+str+num2+"=");
+
+            if (str=="+"){
+                if (num1+num2==num){
+                    alert("答案是："+(num1+num2)+"回答正确");
+                    opener.rmain();
+                    close();
+                    // opener.clearT();
+                }else {
+                    alert("回答错误"+"答案是："+(num1+num2));
+                    close();
+                }
+            }else {
+                if (num1-num2==num){
+                    alert("答案是："+(num1-num2)+"回答正确");
+                    opener.rmain();
+                    close();
+                    // opener.clearT();
+                }else {
+                    alert("回答错误"+"答案是："+(num1-num2));
+                    close();
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+剩余：<span></span>
+<button onclick="play()">开始游戏</button>
+</body>
+</html>
